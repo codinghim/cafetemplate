@@ -29,3 +29,8 @@ $xxl_font_m: 55px;
 
 $normal_font: Quicksand;
 $brush_font: CaveatBrush;
+
+.center_container{
+    display:grid;
+    place-items: center center;
+}

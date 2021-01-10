@@ -14,7 +14,7 @@ const Home = () => {
                 <section className={Styles.main_image_section}>
                     <div className={Styles.main_image_container}>
                         <Image src="/images/cafe/andy-falconer-dwQRixazu9I-unsplash.jpg" layout="fill" />
-                        <div class={Styles.desc_container}>
+                        <div className={Styles.desc_container}>
                             <p className={Styles.title}>Cafe Mocha</p>
                             <p className={Styles.description}>Lorem ipsum dolor sit amet.</p>
                         </div>

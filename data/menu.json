@@ -1,0 +1,44 @@
+{
+    "menu":[
+        {   
+            "title": "Coffee",
+            "menusection":[
+            {
+                "name": "Americano",
+                "price": "$5",
+                "desc": "Lorem ipsum dolor sit amet."
+            },
+            {
+                "name": "Cafe Latte",
+                "price": "$6",
+                "desc": "Lorem ipsum dolor sit amet."
+            },
+            {
+                "name": "Cold Brew",
+                "price": "$4",
+                "desc": "Lorem ipsum dolor sit amet."
+            }
+            ]
+        },
+        {
+            "title": "Tea",
+            "menusection":[
+            {
+                "name": "Peach Tea",
+                "price": "$5",
+                "desc": "Lorem ipsum dolor sit amet."
+            },
+            {
+                "name": "Lemon Tea",
+                "price": "$4",
+                "desc": "Lorem ipsum dolor sit amet."
+            },
+            {
+                "name": "Green Tea",
+                "price": "$3.5",
+                "desc": "Lorem ipsum dolor sit amet."
+            }
+            ]
+        }
+    ]
+}

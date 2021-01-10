@@ -1,0 +1,83 @@
+@import '../lib/var.scss';
+@import '../lib/breakpoint.scss';
+
+.contact_section{
+    padding-top: 15vh;
+    height: 75vh;
+    min-height: 75vh;
+    background-color: $color3;
+    display: grid;
+    place-items: center center;
+    p{
+        text-align: center;
+        font-size: $xl_font;
+        font-family: $brush_font;
+        color: $color2;
+    }
+}
+
+.info_section{
+    .contact_container{
+        position:relative;
+        padding: 10vh 10vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .contact_container_left{
+            text-align: center;
+            >*{
+                padding: 10%;
+                line-height: 2;
+            }
+            .hours_container{
+                display: flex;
+                flex-flow: column;
+                .hours_title{
+                    font-size: $sm_font;
+                    font-weight: bold;
+                    margin-bottom: $sm_font;
+                }
+                .days_container{
+                    p{
+                        font-size: $xs_font;
+                    }
+                }
+                .time_container{
+                    p{
+                        font-size: $xs_font;
+                    }
+                }
+            }
+            .address_container{
+                .address_title{
+                    font-size: $sm_font;
+                    font-weight: bold;
+                    margin-bottom: $sm_font;
+                }
+                p{
+                    font-size: $xs_font;
+                }
+            }
+        }
+        .contact_container_right{
+            padding: 10%;
+            .contact_image_container{}
+        }
+    }
+    .map_container{
+        width: 100%;
+        min-height: 50vh;
+        padding: 20vh 0 50vh 0;
+        p{
+            font-size: $md_font;
+            text-align: center;
+            padding: 15vh;
+            font-weight: bold;
+            // font-family: $brush_font;
+        }
+        .map{
+            width: 100%;
+            height: 50vh;
+            border: 0;
+        }
+    }
+}

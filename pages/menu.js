@@ -1,8 +1,13 @@
 import Layout from '../components/layout'
 import Styles from '../styles/pages/menu.module.scss'
-import Image from 'next/image'
+// import Image from 'next/image'
+import {useEffect} from 'react'
+import {getMenu} from '../lib/menu'
 
-const Menu = () => {
+const Menu = ({menusections}) => {
+    // useEffect(()=>{
+    //     console.log(menusections)
+    // },[])
     return(
         <>
         <Layout>
@@ -10,9 +15,8 @@ const Menu = () => {
                 <div className={Styles.menu_title_container}>
                     <p className={Styles.menu_title}>Menu</p>
                 </div>
-                
                 <div className={Styles.menu_grid}>
-                    {/* column 1 */}
+                    
                     <div className={Styles.menu_grid_column}>
                         <div className={Styles.menu_section}>
                             <div className={Styles.menu_section_title_container}>
@@ -73,7 +77,6 @@ const Menu = () => {
                         
                     
                     </div>
-                    {/* column 2 */}
                     <div className={Styles.menu_grid_column}>
                         <div className={Styles.menu_section}>
                             <div className={Styles.menu_section_title_container}>
@@ -124,5 +127,15 @@ const Menu = () => {
         </>
     )
 }
+
+export const getStaticProps = async () => {
+    const menu = await getMenu()
+    const menusections = menu.menu;
+    console.log(menusections)
+    return {
+        props: {menusections}
+    }
+}
+
 
 export default Menu
