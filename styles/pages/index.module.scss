@@ -1,0 +1,170 @@
+@import '../lib/var.scss';
+@import '../lib/breakpoint.scss';
+
+.main_image_section{
+    position: relative;
+    display: grid;
+    place-items: start center;
+    .main_image_container{
+        position: relative;
+        width: 90vw;
+        height: 75%;
+        margin-top: 17vh;
+        @include breakpoint(mobile){
+            height: 65%;
+        }
+
+    }
+    .desc_container{
+        position: absolute;
+        left: 8vw;
+        bottom: 8vw;
+        color: white;
+        z-index: 1;
+        .title{
+            font-size: $xl_font;
+            font-family: $brush_font;
+            color: white;
+            @include breakpoint(mobile){
+                font-size: $xl_font_m;
+            }
+        }
+        .description{
+            font-size: $md_font;
+            width: 90%;
+            @include breakpoint(mobile){
+                font-size: $md_font_m;
+            }
+        }
+    }
+    
+}
+
+.about_section{
+    text-align: center;
+    background-color: $color3;
+    padding: 20vh 0;
+
+    .title{
+        font-size: $xl_font;
+        font-family: $brush_font;
+        color: $color2;
+    }
+      
+    .description{
+        font-size: $sm_font;
+        line-height: 2;
+        width: 60vw;
+        margin: $md_font auto 0 auto;
+
+        @include breakpoint(mobile){
+            font-size: $sm_font_m;
+        }
+    }
+
+    .icons_container{
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw;
+        margin: 10vh auto 0 auto;
+        width: 60vw;
+        .icon_desc{
+            margin-top: $sm_font;
+            color: $color2;
+            font-size: $sm_font;
+        }
+    }
+}
+
+.why_section{
+    min-height: 200vh;
+    width: 100vw;
+    margin: 30vh auto;
+    .why_container{
+        display: grid;
+        width: 80vw;
+        margin: 0 auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50vh;
+        grid-row-gap: 60vh;
+        @include breakpoint(mobile){
+            grid-row-gap: 20vh;
+            grid-template-columns: 100%;
+            >*{
+                place-self: center;
+            }
+        }
+    }
+}
+
+%why_image_container{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 100px;
+    
+    @include breakpoint(tablet){
+        margin: 300px 30px;
+    }
+}
+%why_desc_container{
+    margin: 0 100px;
+    width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+    @include breakpoint(tablet){
+        margin: 300px 30px;
+    }
+
+    .why_title{
+        font-family: $brush_font;
+        font-size: $md_font;
+        color:$color2;
+    }
+    .why_desc{
+        margin-top: 30px;
+        font-size: $xs_font;
+        line-height: 2;
+        overflow-y: hidden;
+    }
+}
+
+.why_image_container_right{
+    @extend %why_image_container;
+    place-self: center left;
+}
+.why_image_container_left{
+    @extend %why_image_container;
+    place-self: center right;
+}
+
+.why_desc_container_right{
+    @extend %why_desc_container;
+    place-self: center left;
+}
+.why_desc_container_left{
+    @extend %why_desc_container;
+    place-self: center right;
+    > *{
+        text-align: right;
+    }
+}
+
+.background_section{
+    .background_image_container{
+        background-image: url("/images/cafe/nick-hillier-xBXF9pr6LQo-unsplash.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+
+        @include breakpoint(mobile){
+            //vertical image
+            background-image: url("/images/cafe/sincerely-media-VNsdEl1gORk-unsplash.jpg");
+        }
+    }
+}

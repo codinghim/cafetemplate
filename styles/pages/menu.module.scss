@@ -1,0 +1,87 @@
+@import "../lib/var.scss";
+@import "../lib/breakpoint.scss";
+
+.menu_section{
+    position: relative;
+    padding-top: 15vh;
+
+}
+
+.menu_title_container{
+    width: 100vw;
+    height: 60vh;
+    display:grid;
+    place-items: center center;
+    background-color: $color3;
+    .menu_title{
+        font-size: $xl_font;
+        font-family: $brush_font;
+        color: $color2;
+    }
+}
+
+.menu_grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20vh;
+    .menu_section{
+        width: 49vw;
+        padding-top: 15vh;
+
+        @include breakpoint(mobile){
+            width: 100vw;
+        }
+
+        @include breakpoint(tablet){
+            width: 100vw;
+        }
+
+        .menu_section_title_container{
+            position: relative;
+            height: 15vh;
+            overflow: visible;
+            .menu_section_title{
+                text-align: center;
+                font-size: $lg_font;
+                font-family: $brush_font;
+                color: $color2;
+            }
+    
+            .menu_section_divider{
+                position: absolute;
+                display:block;
+                width: 100%;
+                height: 200px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0 auto;
+                @include breakpoint(mobile){
+                    width: 170%;
+                }
+                @include breakpoint(tablet){
+                    width: 130%;
+                }
+                @include breakpoint(lg_desktop){
+                    width: 80%;
+                }
+            }
+        }
+        .menu_container{
+            margin-top: 7vh;
+            min-height: 20vh;
+            margin-bottom: 5vh;
+            > *{
+                text-align: center;
+                font-size: $md_font;
+                font-family: East Sea Dokdo;
+            }
+            >:nth-child(1){
+                margin-top: $sm_font*1.5;
+            }
+            .menu_price, .menu_desc{
+                margin-top: $sm_font/2;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import '../../styles/lib/var.scss';
+
+.footer{
+    position:absolute;
+    bottom:0;
+    background-color: $color4;
+    width: 100vw;
+    height: 20vh;
+    .copyright{
+        color: $color3;
+        text-align: center;
+        padding-top: 8vh;
+    }
+}

@@ -1,0 +1,59 @@
+@import './lib/var.scss';
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: $normal_font;
+    // text-align: center;
+    position: relative;
+    background-color: $color1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+main{
+    // padding-top: 15vh;
+    padding-bottom: 20vh;
+}
+
+section{
+    min-height: 100vh;
+}
+
+
+//import fonts
+@font-face{
+    font-family: CaveatBrush;
+    src: url('../public/fonts/CaveatBrush-Regular.ttf');
+}
+
+@font-face{
+    font-family: East Sea Dokdo;
+    src: url('../public/fonts/EastSeaDokdo-Regular.ttf');
+}
+
+@font-face{
+    font-family: Nanum Brush Script;
+    src: url('../public/fonts/NanumBrushScript-Regular.ttf');
+}
+
+@font-face{
+    font-family: Quicksand;
+    src: url('../public/fonts/Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face{
+    font-family: Yellowtail;
+    src: url('../public/fonts/Yellowtail-Regular.ttf');
+}

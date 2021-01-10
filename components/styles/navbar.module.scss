@@ -1,0 +1,53 @@
+@import '../../styles/lib/var.scss';
+@import '../../styles/lib/breakpoint.scss';
+
+.nav_container{
+    display: grid;
+    place-items: center center;
+    grid-template-rows: 10vh 5vh;
+    position:fixed;
+    width: 100%;
+    height: 15vh;
+    background-color: $color1;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.nav_links{
+    position:absolute;
+    width: 12vh;;
+    height: 10vh;
+    background-color: $color2;
+    right: 1vh;
+    top: 0vh;
+    transform: translateY(-4vh) rotateZ(10deg);
+    display: grid;
+    place-items: end center;
+    .nav_link_item{
+        color: white;
+        margin-bottom: 2px;
+    }
+}
+
+.nav_title{
+    font-family: $brush_font;
+    font-size: $lg_font;
+    margin: 0 auto;
+    color: $color2;
+}
+
+.nav_items{
+    display: grid;
+    margin: 0.2vw 0;
+    grid-auto-flow: column;
+    grid-template-columns: 20vw 1vw 20vw 1vw 20vw;
+    place-items: center center;
+
+    @include breakpoint(mobile){
+        grid-template-columns: 30vw 1vw 30vw 1vw 32vw;
+    }    
+    a{
+        font-size: $sm_font;
+        text-align: center;
+    }
+}
