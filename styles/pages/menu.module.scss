@@ -56,13 +56,16 @@
                 transform: translate(-50%, -50%);
                 margin: 0 auto;
                 @include breakpoint(mobile){
-                    width: 170%;
+                    width: 150%;
                 }
                 @include breakpoint(tablet){
+                    width: 110%;
+                }
+                @include breakpoint(sm_desktop){
                     width: 130%;
                 }
-                @include breakpoint(lg_desktop){
-                    width: 80%;
+                @include breakpoint(desktop){
+                    width: 150%;
                 }
             }
         }
