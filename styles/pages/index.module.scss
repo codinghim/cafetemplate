@@ -13,6 +13,9 @@
         @include breakpoint(mobile){
             height: 65%;
         }
+        @include breakpoint(desktop){
+            width: 75vw;
+        }
 
     }
     .desc_container{
@@ -57,32 +60,54 @@
         width: 60vw;
         margin: $md_font auto 0 auto;
 
-        @include breakpoint(mobile){
-            font-size: $sm_font_m;
-            width: 80vw;
-        }
+
     }
 
     .icons_container{
-        display: grid;
-        grid-template-columns: 20vw 20vw 20vw;
+        display: flex;
         margin: 10vh auto 0 auto;
         width: 60vw;
+        justify-content: space-evenly;
+        overflow: hidden;
         .icon_desc{
             margin-top: $sm_font;
             color: $color2;
             font-size: $sm_font;
         }
-        @include breakpoint(mobile){
+        @include breakpoint(tablet){
             width: 81vw;
-            grid-template-columns: 27vw 27vw 27vw;
             >a{
                 padding: 10%;
             }
         }
-        
-        
+        @include breakpoint(mobile){
+            width: 81vw;
+            >a{
+                padding: 10%;
+            }
+        }
     }
+    // .icons_container{
+    //     display: grid;
+    //     grid-template-columns: 20vw 20vw 20vw;
+    //     margin: 10vh auto 0 auto;
+    //     width: 60vw;
+    //     >*{
+    //         overflow: hidden;
+    //     }
+    //     .icon_desc{
+    //         margin-top: $sm_font;
+    //         color: $color2;
+    //         font-size: $sm_font;
+    //     }
+    //     @include breakpoint(mobile){
+    //         width: 81vw;
+    //         grid-template-columns: 27vw 27vw 27vw;
+    //         >a{
+    //             padding: 10%;
+    //         }
+    //     }
+    // }
 }
 
 .why_section{

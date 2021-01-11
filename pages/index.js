@@ -35,19 +35,19 @@ const Home = () => {
                     </p>
                     <div className={Styles.icons_container}>
                         <Link href="/about">
-                            <a>
+                            <a data-aos="fade-up">
                                 <Image src="/icons/coffee-cup.png" width={100} height={100} />
                                 <p className={Styles.icon_desc}>Home</p>
                             </a>
                         </Link>
                         <Link href="/menu">
-                            <a>
+                            <a data-aos="fade-up" data-aos-delay="200">
                                 <Image src="/icons/coffee-machine.png" width={100} height={100} />
                                 <p className={Styles.icon_desc}>Menu</p>
                             </a>
                         </Link>
                         <Link href="/contact">
-                            <a>
+                            <a data-aos="fade-up" data-aos-delay="400">
                                 <Image src="/icons/location.png" width={100} height={100} />
                                 <p className={Styles.icon_desc}>Contact</p>
                             </a>
@@ -60,7 +60,7 @@ const Home = () => {
                         <div className={Styles.why_image_container_left}>
                             <Image src="/images/coffee/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" layout="fill"/>
                         </div>
-                        <div className={Styles.why_desc_container_right}>
+                        <div className={Styles.why_desc_container_right} data-aos="fade-left" data-aos-offset="500">
                             <p className={Styles.why_title}>Why coffee?</p>
                             <p className={Styles.why_desc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nam ut tristique lacus. In et mollis massa. Aliquam egestas congue ex non lacinia.
@@ -68,7 +68,7 @@ const Home = () => {
                         Cras ullamcorper lacinia felis, vestibulum venenatis dui pretium eu
                         . Nulla laoreet semper convallis.</p>
                         </div>
-                        <div className={Styles.why_desc_container_left}>
+                        <div className={Styles.why_desc_container_left} data-aos="fade-right" data-aos-offset="500">
                             <p className={Styles.why_title}>Why cafe mocha?</p>
                             <p className={Styles.why_desc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nam ut tristique lacus. In et mollis massa. Aliquam egestas congue ex non lacinia.
