@@ -53,12 +53,13 @@
       
     .description{
         font-size: $sm_font;
-        line-height: 2;
+        line-height: 2.5;
         width: 60vw;
         margin: $md_font auto 0 auto;
 
         @include breakpoint(mobile){
             font-size: $sm_font_m;
+            width: 80vw;
         }
     }
 
@@ -72,11 +73,19 @@
             color: $color2;
             font-size: $sm_font;
         }
+        @include breakpoint(mobile){
+            width: 81vw;
+            grid-template-columns: 27vw 27vw 27vw;
+            >a{
+                padding: 10%;
+            }
+        }
+        
+        
     }
 }
 
 .why_section{
-    min-height: 200vh;
     width: 100vw;
     margin: 30vh auto;
     .why_container{
@@ -84,7 +93,7 @@
         width: 80vw;
         margin: 0 auto;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 50vh;
+        grid-template-rows: minmax(550px, 50vh);
         grid-row-gap: 60vh;
         @include breakpoint(mobile){
             grid-row-gap: 20vh;
@@ -92,42 +101,71 @@
             >*{
                 place-self: center;
             }
+            width: 85vw;
         }
+        @include breakpoint(tablet){
+            grid-row-gap: 30vh;
+        }
+
     }
 }
 
 %why_image_container{
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 550px;
     margin: 0 100px;
     
     @include breakpoint(tablet){
-        margin: 300px 30px;
+        margin: 0 30px;
+        width: 300px;
+        height: 500px;
+    }
+    @include breakpoint(mobile){
+        width: 85vw;
     }
 }
 %why_desc_container{
+    
     margin: 0 100px;
-    width: 300px;
-    min-height: 400px;
+    width: 400px;
+    min-height: 550px;
     display: flex;
     flex-flow: column;
     justify-content: center;
     
     @include breakpoint(tablet){
-        margin: 300px 30px;
+        margin: 0 30px;
+        width: 300px;
+        height: 500px;
+    }
+    @include breakpoint(mobile){
+        width: 85vw;
     }
 
     .why_title{
         font-family: $brush_font;
-        font-size: $md_font;
+        font-size: $lg_font;
         color:$color2;
+        
+        @include breakpoint(mobile){
+            font-size: $md_font;
+        }
+        @include breakpoint(tablet){
+            font-size: $md_font;
+        }
     }
     .why_desc{
         margin-top: 30px;
-        font-size: $xs_font;
-        line-height: 2;
+        font-size: $sm_font;
+        line-height: 2.5;
         overflow-y: hidden;
+        @include breakpoint(mobile){
+            font-size: $xs_font;
+        }
+        @include breakpoint(tablet){
+            font-size: $xs_font;
+        }
     }
 }
 

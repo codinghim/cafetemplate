@@ -23,9 +23,17 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20vh;
+    padding: 0 20vw;
+    @include breakpoint(mobile){
+        padding: 0;
+    }
+
+    @include breakpoint(tablet){
+        padding: 0;
+    }
     .menu_section{
-        width: 49vw;
-        padding-top: 15vh;
+        width: 29vw;
+        padding: 15vh 5vw;
 
         @include breakpoint(mobile){
             width: 100vw;
@@ -62,10 +70,10 @@
                     width: 110%;
                 }
                 @include breakpoint(sm_desktop){
-                    width: 130%;
+                    width: 300%;
                 }
                 @include breakpoint(desktop){
-                    width: 150%;
+                    width: 250%;
                 }
             }
         }
@@ -76,7 +84,11 @@
             > *{
                 text-align: center;
                 font-size: $md_font;
+                // font-family: $brush_font;
                 font-family: East Sea Dokdo;
+                // font-family: Yellowtail;
+                // font-family: Nanum Brush Script;
+                
             }
             >:nth-child(1){
                 margin-top: $sm_font*1.5;

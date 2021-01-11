@@ -66,6 +66,9 @@
         .contact_container_right{
             padding: 10%;
             margin: 0 auto;
+            @include breakpoint(tablet){
+                margin: 15% auto 0 auto;
+            }
             .contact_image_container{}
         }
     }

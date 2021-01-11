@@ -35,10 +35,16 @@ const Contact = () => {
                                 Fresh Meadows, NY 11365
                             </p>
                         </div>
+                        <div className={Styles.address_container}>
+                            <p className={Styles.address_title}>Call</p>
+                            <a href="tel:777-777-7777">
+                                777-777-7777
+                            </a>
+                        </div>
                     </div>
                     <div className={Styles.contact_container_right}>
                         <div>
-                            <Image src="/images/cafe/daan-evers-tKN1WXrzQ3s-unsplash.jpg" width={300} height={400}/>
+                            <Image src="/images/cafe/daan-evers-tKN1WXrzQ3s-unsplash.jpg" width={450} height={700}/>
                         </div>
                     </div>
                 </div>

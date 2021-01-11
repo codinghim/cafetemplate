@@ -1,5 +1,5 @@
 @import '../../styles/lib/var.scss';
-
+@import '/styles/lib/breakpoint.scss';
 .footer{
     position:absolute;
     bottom:0;
@@ -11,4 +11,16 @@
         text-align: center;
         padding-top: 8vh;
     }
+    br{
+        @include breakpoint(sm_desktop){
+            content: ' ';
+        }
+        @include breakpoint(desktop){
+            content: ' ';
+        }
+        @include breakpoint(tablet){
+            content: ' ';
+        }
+    }
+    
 }
