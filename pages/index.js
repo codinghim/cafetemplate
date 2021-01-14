@@ -60,7 +60,7 @@ const Home = () => {
                         <div className={Styles.why_image_container_left}>
                             <Image src="/images/coffee/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" layout="fill"/>
                         </div>
-                        <div className={Styles.why_desc_container_right} data-aos="fade-left" data-aos-offset="500">
+                        <div className={Styles.why_desc_container_right} data-aos="fade-left" data-aos-offset="500" data-aos-anchor-placement="top-bottom">
                             <p className={Styles.why_title}>Why coffee?</p>
                             <p className={Styles.why_desc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nam ut tristique lacus. In et mollis massa. Aliquam egestas congue ex non lacinia.
@@ -68,7 +68,7 @@ const Home = () => {
                         Cras ullamcorper lacinia felis, vestibulum venenatis dui pretium eu
                         . Nulla laoreet semper convallis.</p>
                         </div>
-                        <div className={Styles.why_desc_container_left} data-aos="fade-right" data-aos-offset="500">
+                        <div className={Styles.why_desc_container_left} data-aos="fade-right" data-aos-offset="500" data-aos-anchor-placement="top-bottom">
                             <p className={Styles.why_title}>Why cafe mocha?</p>
                             <p className={Styles.why_desc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nam ut tristique lacus. In et mollis massa. Aliquam egestas congue ex non lacinia.
@@ -84,7 +84,6 @@ const Home = () => {
                 
                 <section className={Styles.background_section}>
                     <div className={Styles.background_image_container}>
-                        {/* <Image src="/images/cafe/nick-hillier-xBXF9pr6LQo-unsplash.jpg" layout="fill"/> */}
                     </div>
                 </section>
                 

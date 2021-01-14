@@ -50,4 +50,8 @@
         font-size: $sm_font;
         text-align: center;
     }
+    a:hover{
+        color: $color2;
+        font-weight: bold;
+    }
 }

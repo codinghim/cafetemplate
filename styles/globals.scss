@@ -9,6 +9,7 @@ body {
     // text-align: center;
     position: relative;
     background-color: $color1;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -24,13 +25,12 @@ a {
 
 main{
     // padding-top: 15vh;
-    padding-bottom: 20vh;
+    padding-bottom: 60vh;
 }
 
 section{
     min-height: 100vh;
 }
-
 
 //import fonts
 @font-face{

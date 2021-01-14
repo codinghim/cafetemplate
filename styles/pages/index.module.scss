@@ -56,10 +56,13 @@
       
     .description{
         font-size: $sm_font;
-        line-height: 2.5;
+        line-height: 2;
         width: 60vw;
         margin: $md_font auto 0 auto;
 
+        @include breakpoint(mobile){
+            width: 90vw;
+        }
 
     }
 
@@ -183,7 +186,7 @@
     .why_desc{
         margin-top: 30px;
         font-size: $sm_font;
-        line-height: 2.5;
+        line-height: 2;
         overflow-y: hidden;
         @include breakpoint(mobile){
             font-size: $xs_font;

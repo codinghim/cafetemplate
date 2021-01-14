@@ -21,6 +21,37 @@
             ]
         },
         {
+            "title": "Iced",
+            "divider": "hl_iced.png",
+            "menusection":[
+                {
+                    "name": "Iced Americano",
+                    "price": "$5",
+                    "desc": "Lorem ipsum dolor sit amet."
+                },
+                {
+                    "name": "Iced Cafe Latte",
+                    "price": "$6",
+                    "desc": "Lorem ipsum dolor sit amet."
+                },
+                {
+                    "name": "Iced Cold Brew",
+                    "price": "$4",
+                    "desc": "Lorem ipsum dolor sit amet."
+                },
+                {
+                    "name": "Iced House Blend Coffee",
+                    "price": "$3",
+                    "desc": "Lorem ipsum dolor sit amet."
+                },
+                {
+                    "name": "Iced Cafe Mocha",
+                    "price": "$7",
+                    "desc": "Lorem ipsum dolor sit amet."
+                }
+            ]
+        },
+        {
             "title": "Tea",
             "menusection":[
             {
@@ -37,8 +68,15 @@
                 "name": "Green Tea",
                 "price": "$3.5",
                 "desc": "Lorem ipsum dolor sit amet."
+            },
+            {
+                "name": "Black Tea",
+                "price": "$3",
+                "desc": "Lorem ipsum dolor sit amet."
             }
             ]
         }
+
+        
     ]
 }

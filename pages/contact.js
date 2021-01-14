@@ -50,7 +50,7 @@ const Contact = () => {
                 </div>
                 <div className={Styles.map_container}>
                     <p>Location</p>
-                    <iframe className={Styles.map} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12089.532671430947!2d-73.9832326!3d40.7535965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb49cafb82537f1a7!2sBryant%20Park!5e0!3m2!1sen!2sus!4v1610319654546!5m2!1sen!2sus" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe className={Styles.map} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12089.532671430947!2d-73.9832326!3d40.7535965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb49cafb82537f1a7!2sBryant%20Park!5e0!3m2!1sen!2sus!4v1610319654546!5m2!1sen!2sus" frameBorder="0" allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
                 </div>
             </section>
         </Layout>

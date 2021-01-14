@@ -5,9 +5,13 @@
     bottom:0;
     background-color: $color4;
     width: 100vw;
-    height: 20vh;
+    height: 60vh;
+    .form{
+        height: 40vh;
+    }
     .copyright{
         color: $color3;
+        height: 20vh;
         text-align: center;
         padding-top: 8vh;
     }
@@ -21,6 +25,11 @@
         @include breakpoint(tablet){
             content: ' ';
         }
+    }
+    .contact_button{
+        position: fixed;
+        right: 20px;
+        bottom: 20px
     }
     
 }
