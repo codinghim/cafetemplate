@@ -44,7 +44,7 @@ const Contact = () => {
                     </div>
                     <div className={Styles.contact_container_right}>
                         <div>
-                            <Image src="/images/cafe/daan-evers-tKN1WXrzQ3s-unsplash.jpg" width={450} height={700}/>
+                            <Image src="/images/cafe/daan-evers-tKN1WXrzQ3s-unsplash.jpg" width={450} height={700} objectFit="cover"/>
                         </div>
                     </div>
                 </div>

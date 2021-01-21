@@ -13,7 +13,7 @@ const Home = () => {
             <Layout>
                 <section className={Styles.main_image_section}>
                     <div className={Styles.main_image_container}>
-                        <Image src="/images/cafe/andy-falconer-dwQRixazu9I-unsplash.jpg" layout="fill" />
+                        <Image src="/images/cafe/andy-falconer-dwQRixazu9I-unsplash.jpg" layout="fill" objectFit="cover"/>
                         <div className={Styles.desc_container}>
                             <p className={Styles.title}>Cafe Mocha</p>
                             <p className={Styles.description}>Lorem ipsum dolor sit amet.</p>
@@ -58,7 +58,7 @@ const Home = () => {
                 <section className={Styles.why_section}>
                     <div className={Styles.why_container}>
                         <div className={Styles.why_image_container_left}>
-                            <Image src="/images/coffee/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" layout="fill"/>
+                            <Image src="/images/coffee/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" layout="fill" objectFit="cover"/>
                         </div>
                         <div className={Styles.why_desc_container_right} data-aos="fade-left" data-aos-offset="500" data-aos-anchor-placement="top-bottom">
                             <p className={Styles.why_title}>Why coffee?</p>
@@ -77,7 +77,7 @@ const Home = () => {
                         . Nulla laoreet semper convallis.</p>
                         </div>
                         <div className={Styles.why_image_container_right}>
-                            <Image src="/images/coffee/nathan-dumlao-r-KfktlyBL0-unsplash.jpg" layout="fill"/>
+                            <Image src="/images/coffee/nathan-dumlao-r-KfktlyBL0-unsplash.jpg" layout="fill" objectFit="cover"/>
                         </div>
                     </div>
                 </section>
