@@ -1,5 +1,5 @@
 @import './lib/var';
-
+@import './lib/breakpoint.scss';
 
 html,
 body {
@@ -31,6 +31,28 @@ main{
 section{
     min-height: 100vh;
 }
+
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+    @include breakpoint(mobile){
+        width: 5px;
+    }
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 //import fonts
 @font-face{
